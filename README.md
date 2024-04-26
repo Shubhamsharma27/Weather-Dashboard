@@ -15,6 +15,10 @@ A simple weather dashboard application built with React.
 - openweatherapi
 - CSS (for styling)
 
+
+Live Link Here:-   https://weatherapp-sandy-six.vercel.app/
+
+
 ## Getting Started
 
 ### Prerequisites
