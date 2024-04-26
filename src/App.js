@@ -3,9 +3,10 @@ import coldBg from "./assets/cold.jpg";
 import Descriptions from "./components/Descriptions";
 import { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./weatherService";
+import CloudIcon from "@mui/icons-material/Cloud";
 
 function App() {
-  const [city, setCity] = useState("Paris");
+  const [city, setCity] = useState("Delhi");
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState("metric");
   const [bg, setBg] = useState(hotBg);
@@ -58,7 +59,10 @@ function App() {
             <div className="section section__temperature">
               <div className="icon">
                 <h3>{`${weather.name}, ${weather.country}`}</h3>
-                <img src={weather.iconURL} alt="weatherIcon" />
+                <img
+                  src="https://openweathermap.org/img/wn/02d@2x.png"
+                  alt=""
+                />
                 <h3>{weather.description}</h3>
               </div>
               <div className="temperature">
